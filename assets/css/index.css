@@ -1,0 +1,229 @@
+/* Menu */
+#nav{
+  position: fixed;
+  top: 0;
+  height: 80px;
+  z-index: 999;
+  background-color: #ffffff;
+}
+
+.navbar{
+top: 0;
+box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+width: 100%;
+padding-left: 125px;
+padding-right: 125px;
+
+}
+
+.idioma {
+  position: fixed;
+  top: 6.61px;
+  left: calc(87%);
+  width: 66px;
+  height: 24.39px;
+  margin-left: 32px;
+}
+
+.icon_small{
+  height: 25px;
+}
+
+@media (max-width: 991px) {
+  .idioma {
+    position: static;
+    left: auto;
+    margin-left: 0;
+  }
+}
+
+.nav-link {
+  font-family: 'Poppins';
+  font-weight: 400;
+  margin-right: 15px;
+  color: var(--color-black);
+}
+
+.nav-item.active .nav-link {
+  border-bottom: 2px solid var(--color-cornflowerblue-100);
+  color: var(--color-primary); ;
+}
+
+#button_login{
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: auto;
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+    /* Aplicar altura del 12% solo en pantallas más grandes que 767px (tablets y escritorio) */
+    .navbar {
+      height: 12%;
+    }
+  }
+  
+/* Movil and tablet*/
+  @media (max-width: 991px) {
+   /* Navbar movil*/
+   
+   #nav{
+    height: 60px;
+  }
+  #navbarNav{
+    margin-top: 10px;
+    background-color: #ffffff;
+    padding-left: 10%;
+   height: 230px;
+  }
+   .navbar{
+      top: 0;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+      }
+    /* Estilos para dispositivos móviles */
+    .navbar-toggler {
+      background-color: var(--color-cornflowerblue-100); /* Color de fondo deseado */
+      color: var(--color-primary); /* Color de texto deseado */
+    }
+  
+    /* Estilos para dispositivos móviles */
+    .navbar-toggler-icon {
+      background-image: url('../img/Img_menu_responsive.png'); /* Ruta de la imagen de la hamburguesa */
+      width: 30px; /* Ancho deseado de la imagen */
+      height: 30px; /* Altura deseada de la imagen */
+    }
+  }
+
+  @media (max-width: 991px) {
+    /* Aplicar margen de 10px a los enlaces en dispositivos móviles y tablets */
+    .nav-link {
+      margin-top: 15px;
+    }
+  }
+
+/*End Menu*/
+
+/*Start carrousel*/
+#carousel {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide img {
+  filter: brightness(0.5);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.content h1 {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.content p {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#title_smallcarousel{
+  font-family: 'Poppins';
+  font-weight: 900;
+  color: var( --color-cornflowerblue-100);
+}
+
+
+/* end carrousel*/
+
+/* Start carcteristicas*/
+
+.blue-box {
+  background-color: blue;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.blue-box .circle {
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title_caracteristicas {
+  font-family: 'Raleway';
+  font-weight: 900;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 7%;
+}
+
+.container_caracteristicas{
+margin-top: 6%;
+padding: 50px;
+}
+
+
+/* end carcteristicas*/
+#ContentFooter{
+
+padding: 40px;
+color: var(--color-white);
+}
+
+.footer {
+  margin-top: 10%;
+  background-color: var(--color-primary);
+  display: flex;
+}
+.parrafoFooter{
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer_small {
+  background-color: var(--color-darkslateblue-100);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  height: 60px;
+  color: var(--color-white);
+}
